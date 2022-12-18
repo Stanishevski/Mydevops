@@ -1,15 +1,15 @@
-name: Check remote host and push report
+name: Action#1: Check remote host and push report
 
 on:
   push:
     branches:
     - master
-    - second
+    
 
 jobs:
   prepare:
     runs-on: [my_runner]
-    #runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Install netcat
         run: sudo apt update && sudo apt install -y netcat
