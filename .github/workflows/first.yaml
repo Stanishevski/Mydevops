@@ -4,7 +4,7 @@ on:
   push:
     branches:
     - master
-    - second
+      #- second
 
 jobs:
   prepare:
